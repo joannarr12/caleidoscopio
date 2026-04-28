@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* UI overlay */
+.ui {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  transition: all 0.4s ease;
+}
+
+/* HOVER interaction (assignment requirement) */
+.ui:hover {
+  transform: scale(1.1);
+  color: cyan;
+}
+
+/* Advanced pseudo-class */
+body:has(canvas:hover) {
+  background: radial-gradient(circle, #111, #000);
+}
+
+/* Click feedback */
+h1:active {
+  color: magenta;
+}
+
+/* subtle glow feel */
+canvas {
+  display: block;
+  mix-blend-mode: screen;
+}
